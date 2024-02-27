@@ -26,7 +26,6 @@ namespace Fitness_Tracking_System
             data.Columns.Add("Description", typeof(string));
             data.Columns.Add("Month", typeof(string));
             data.Columns.Add("PaymentType", typeof(string));
-            data.Columns.Add("Cost", typeof(int));
 
 
             dataGridView1.DataSource = data;
