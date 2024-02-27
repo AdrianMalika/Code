@@ -29,13 +29,10 @@ namespace Fitness_Tracking_System
             {
                 double caloriesBurned = Activities.CalculateCaloriesBurnedWalking(steps, distance, time);
 
-                // Display the calculated calories burned
-                lblCaloriesBurned.Text = $"Calories Burned: {caloriesBurned}";
+                lblCaloriesBurned.Text = $"Calories: {caloriesBurned}";
 
-                // Insert a new record into the database
                 InsertNewGoal(caloriesBurned, goal);
 
-                // Report whether the user has achieved the goal
                 ReportGoalAchievement(caloriesBurned, goal);
 
                 AfterAchievingGoalOptions();
